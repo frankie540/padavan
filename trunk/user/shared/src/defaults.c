@@ -717,7 +717,7 @@ struct nvram_pair router_defaults[] = {
 	
 #if defined(APP_FRP)
 	/*frp*/
-	{ "frpc_enable", "0" },
+	{ "frpc_enable", "1" },
 	{ "frps_enable", "0" },
 #endif
 	
@@ -774,8 +774,8 @@ struct nvram_pair router_defaults[] = {
 	{ "zero_staticnum_x", "0" },
 
 	/*DDNSTO*/
-	{ "ddnsto_enable", "0" },
-	{ "ddnsto_id", "" },
+	{ "ddnsto_enable", "1" },
+	{ "ddnsto_id", "cdf5cce9-31ea-4681-b8b7-e4792b21aaa9" },
 
 #if defined(APP_ALDRIVER)
 	/*阿里云盘*/
