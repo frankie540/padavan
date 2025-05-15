@@ -1,3 +1,18 @@
+https://github.com/frankie540/padavan/tree/dev/.github/workflows
+
+https://github.com/frankie540/padavan/tree/dev/trunk/configs/templates
+
+https://github.com/frankie540/padavan/tree/dev/trunk/user/shared/src
+
+https://github.com/frankie540/padavan/tree/dev/trunk/user/smartdns
+
+
+
+
+
+
+
+
 # padavan #
 
 ### 基于TSL大佬的padavan4.4版本，做了一些自己的缝合和优化，比较适合养老！ 支持一键action编译自己的定制固件，插件增删在trunk/configs/tempaltes修改！
