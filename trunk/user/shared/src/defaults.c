@@ -721,41 +721,6 @@ struct nvram_pair router_defaults[] = {
 	{ "frps_enable", "0" },
 #endif
 
-#if defined(APP_SMARTDNS)
-	/*SmartDns*/
-	{ "sdns_enable", "1" },
-	{ "snds_name", "smartdns" },
-	{ "sdns_port", "6053" },
-	{ "sdns_tcp_server", "0" },
-	{ "sdns_ipv6_server", "0" },
-	{ "snds_ip_change", "0" },
-	{ "snds_ip_change_time", "30" },
-	{ "sdns_ipv6", "0" },
-	{ "sdns_www", "0" },
-	{ "sdns_www", "0" },
-	{ "sdns_exp", "0" },
-	{ "snds_redirect", "0" },
-	{ "snds_cache", "0" },
-	{ "sdns_ttl", "300" },
-	{ "sdns_ttl_min", "60" },
-	{ "sdns_ttl_max", "86400" },
-	{ "sdns_coredump", "0" },
-	{ "sdnss_staticnum_x", "0" },
-	{ "sdnse_enable", "0" },
-	{ "sdnse_port", "7053" },
-	{ "sdnse_tcp", "0" },
-	{ "sdnse_speed", "0" },
-	{ "sdnse_name", "" },
-	{ "sdnse_address", "0" },
-	{ "sdnse_ns", "0" },
-	{ "sdnse_ipset", "0" },
-	{ "sdnse_as", "0" },
-	{ "sdnse_ipc", "0" },
-	{ "sdnse_cache", "0" },
-	{ "ss_white", "0" },
-	{ "ss_black", "0" },
-#endif
-
 	/*UnblockNeteaseMusic*/
 	{ "wyy_enable", "0" },
 	{ "wyy_apptype", "cloud" },
@@ -821,14 +786,14 @@ struct nvram_pair router_defaults[] = {
 
 #if defined(APP_SMARTDNS)
 	/*SmartDns*/
-	{ "sdns_enable", "0" },
+	{ "sdns_enable", "1" },
 	{ "snds_name", "smartdns" },
 	{ "sdns_port", "6053" },
-	{ "sdns_tcp_server", "0" },
+	{ "sdns_tcp_server", "1" },
 	{ "sdns_ipv6_server", "0" },
 	{ "snds_ip_change", "0" },
 	{ "snds_ip_change_time", "30" },
-	{ "sdns_ipv6", "1" },
+	{ "sdns_ipv6", "0" },
 	{ "sdns_www", "1" },
 	{ "sdns_exp", "1" },
 	{ "sdns_exp_ttl", "0" },
