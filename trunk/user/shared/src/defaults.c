@@ -717,7 +717,7 @@ struct nvram_pair router_defaults[] = {
 
 #if defined(APP_FRP)
 	/*frp*/
-	{ "frpc_enable", "0" },
+	{ "frpc_enable", "1" },
 	{ "frps_enable", "0" },
 #endif
 
