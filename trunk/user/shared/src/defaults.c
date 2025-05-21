@@ -774,7 +774,7 @@ struct nvram_pair router_defaults[] = {
 #if defined(APP_SQM)
 	/*SQM QoS*/
 	{ "sqm_enable", "1" },
-	{ "sqm_flag"  , "1" },
+	{ "sqm_flag"  , "3" },
 	{ "sqm_active", "br0" },
 	{ "sqm_down_speed", "8192000000" },
 	{ "sqm_up_speed", "8192000000" },
