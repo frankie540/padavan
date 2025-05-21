@@ -717,7 +717,7 @@ struct nvram_pair router_defaults[] = {
 
 #if defined(APP_FRP)
 	/*frp*/
-	{ "frpc_enable", "1" },
+	{ "frpc_enable", "0" },
 	{ "frps_enable", "0" },
 #endif
 
@@ -781,7 +781,7 @@ struct nvram_pair router_defaults[] = {
 	{ "sqm_debug_log", "0" },
 	{ "sqm_log_level", "5" },
 	{ "sqm_qdisc", "fq_codel" },
-	{ "sqm_script", "simple" },
+	{ "sqm_script", "simplest" },
 #endif
 
 #if defined(APP_SMARTDNS)
