@@ -12,25 +12,16 @@ log_level = info
 log_max_days = 1
 
 
-# 新加坡-新加坡-新加坡800M
 [common]
-server_addr = sg.sg.sgserver.hay-frp.org
-server_port = 8000
-tcp_mux = true
-protocol = tcp
-tls_enable = false
-user = 71alwQtNHPHBsriq
-token = HayFrpToken
+server_addr = frp.104300.xyz
+server_port = 7000
+token = ad2e42d217464e28
 
-# 隧道 #12242 的配置文件(上次更新于 2025-01-13 23:06)
-[Frankieyc1]
-privilege_mode = true
+[Frankieyc2]
 type = tcp
-local_ip = 192.168.100.1
+local_ip = 192.168.100.2
 local_port = 80
-remote_port = 54023
-use_encryption = true
-use_compression = true
+remote_port = 22674
 
 
 # ================================
