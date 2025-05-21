@@ -781,7 +781,7 @@ struct nvram_pair router_defaults[] = {
 	{ "sqm_debug_log", "0" },
 	{ "sqm_log_level", "5" },
 	{ "sqm_qdisc", "fq_codel" },
-	{ "sqm_script", "simplest" },
+	{ "sqm_script", "simplest.qos" },
 #endif
 
 #if defined(APP_SMARTDNS)
