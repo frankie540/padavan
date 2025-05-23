@@ -939,9 +939,9 @@ struct nvram_pair router_defaults[] = {
 	{ "fw_pt_pppoe", "0" },
 
 #if defined(BOARD_ROLE_REPEATER)
-	{ "sw_mode", "3" },
-#else
 	{ "sw_mode", "1" },
+#else
+	{ "sw_mode", "3" },
 #endif
 
 	{ "telnetd", "0" },
