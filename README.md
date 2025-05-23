@@ -1,11 +1,12 @@
 
 2025/05
 
-使用豆包AI进行GitHub action编译脚本的修复
-Build-Padavan-RepairedByAI.yml
+使用豆包AI进行GitHub action编译脚本的修复Build-Padavan-RepairedByAI.yml
+
 https://github.com/frankie540/padavan/tree/dev/.github/workflows
 
 修改机型的插件模板
+
 https://github.com/frankie540/padavan/tree/dev/trunk/configs/templates
 
 k2p:
@@ -29,12 +30,15 @@ CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y
 CONFIG_FIRMWARE_INCLUDE_DDNSTO=y
 CONFIG_FIRMWARE_INCLUDE_SQM=y
 
-defaults.h 修改LAN口IP，WiFi名字密码，
+
 defaults.c 默认启动smartdns，ddnsto，sqm，关闭ipv6
+defaults.h 修改LAN口IP，WiFi名字密码，
+
 https://github.com/frankie540/padavan/tree/dev/trunk/user/shared/src
 
 修改smartdns的smartdns_custom.conf
-https://github.com/frankie540/padavan/tree/dev/trunk/user/smartdns
+
+https://github.com/frankie540/padavan/tree/dev/trunk/user/smartdns/conf
 
 
 
