@@ -578,7 +578,7 @@ struct nvram_pair router_defaults[] = {
 	{ "socks5_port", "1088" },
 	{ "socks5_aenable", "0" },
 	{ "socks5_s_username", "" },
-	{ "socks5_s_password", "" },
+	{ "socks5_s_pasord", "" },
 	{ "ss_cgroups", "0" },
 	{ "ss_cgoups_cpu_s", "512" },
 	{ "ss_cgoups_mem_s", "20M" },
@@ -648,7 +648,7 @@ struct nvram_pair router_defaults[] = {
 	{ "d_v2_host", "" },
 	{ "d_v2_path", "" },
 	{ "d_v2_tls", "" },
-	{ "d_ss_password", "" },
+	{ "d_ss_pasord", "" },
 	{ "d_ss_method", "" },
 	{ "d_ss_protocol", "" },
 	{ "d_ss_protoparam", "" },
@@ -712,7 +712,7 @@ struct nvram_pair router_defaults[] = {
 	{ "caddyw_wan_port", "19999" },
 	{ "caddy_wip6", "0" },
 	{ "caddy_wname", "admin" },
-	{ "caddy_wpassword", "admin" },
+	{ "caddy_wpasord", "admin" },
 #endif
 
 #if defined(APP_FRP)
@@ -747,7 +747,7 @@ struct nvram_pair router_defaults[] = {
 	{ "aliyundrive_enable", "0" },
 	{ "ald_refresh_token", "" },
 	{ "ald_auth_user", "" },
-	{ "ald_auth_password", "" },
+	{ "ald_auth_pasord", "" },
 	{ "ald_read_buffer_size", "10485760" },
 	{ "ald_cache_size", "1000" },
 	{ "ald_cache_ttl", "600" },
@@ -855,7 +855,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ddns_enable_x", "0" },
 	{ "ddns_server_x", "" },
 	{ "ddns_username_x", "" },
-	{ "ddns_passwd_x", "" },
+	{ "ddns_pasd_x", "" },
 	{ "ddns_hostname_x", "" },
 	{ "ddns_hostname2_x", "" },
 	{ "ddns_hostname3_x", "" },
@@ -939,9 +939,9 @@ struct nvram_pair router_defaults[] = {
 	{ "fw_pt_pppoe", "0" },
 
 #if defined(BOARD_ROLE_REPEATER)
-	{ "sw_mode", "3" },
-#else
 	{ "sw_mode", "1" },
+#else
+	{ "sw_mode", "3" },
 #endif
 
 	{ "telnetd", "0" },
