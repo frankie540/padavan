@@ -209,7 +209,7 @@ struct nvram_pair router_defaults[] = {
 #endif
 	{ "wl_txbf", "1" },
 	{ "wl_ssid2",  DEF_WLAN_5G_SSID },
-	{ "wl_mode_x", "0" },
+	{ "wl_mode_x", "4" },
 	{ "wl_wdsapply_x", "0" },
 	{ "wl_wdsnum_x", "0" },
 	{ "wl_wep_x", "0" },
@@ -260,11 +260,11 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_guest_mcs_mode", "0" },
 
 	// ApCli 5Ghz
-	{ "wl_sta_ssid", "W_5G" },
+	{ "wl_sta_ssid", "Banana_5G" },
 	{ "wl_sta_auth_mode", "psk" },
 	{ "wl_sta_wpa_mode", "2" },
 	{ "wl_sta_crypto", "aes" },
-	{ "wl_sta_wpa_psk", "22674499" },
+	{ "wl_sta_wpa_psk", "1234567899" },
 	{ "wl_sta_wisp", "1" },
 	{ "wl_sta_auto", "1" },
 #endif
