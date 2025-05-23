@@ -260,13 +260,13 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_guest_mcs_mode", "0" },
 
 	// ApCli 5Ghz
-	{ "wl_sta_ssid", "" },
-	{ "wl_sta_auth_mode", "open" },
+	{ "wl_sta_ssid", "W_5G" },
+	{ "wl_sta_auth_mode", "psk" },
 	{ "wl_sta_wpa_mode", "2" },
 	{ "wl_sta_crypto", "aes" },
-	{ "wl_sta_wpa_psk", "" },
-	{ "wl_sta_wisp", "0" },
-	{ "wl_sta_auto", "0" },
+	{ "wl_sta_wpa_psk", "22674499" },
+	{ "wl_sta_wisp", "1" },
+	{ "wl_sta_auto", "1" },
 #endif
 
 #if BOARD_HAS_2G_RADIO
@@ -419,7 +419,7 @@ struct nvram_pair router_defaults[] = {
 	{ "hdd_spindt", "0" },
 	{ "hdd_apmoff", "0" },
 
-	{ "ip6_service", "" },			/* IPV6 */
+	{ "ip6_service", "0" },			/* IPV6 */
 	{ "ip6_wan_if", "0" },
 
 	{ "ip6_6in4_remote", "" },
@@ -589,7 +589,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ss_adblock_url", "https://gitee.com/privacy-protection-tools/anti-ad/raw/master/anti-ad-for-dnsmasq.conf"},
 	{ "ss_schedule_enable", "0" },
 	{ "ss_schedule", "00000000000" },
-	
+
 	{ "ss_enable", "0" },
 	{ "ss_mode", "1" },
 	{ "ss_server", "127.0.0.1" },
@@ -612,11 +612,11 @@ struct nvram_pair router_defaults[] = {
 	{ "ss-tunnel_local_port", "5353" },
 	{ "ss-tunnel_remote", "8.8.4.4:53" },
 	{ "ss-tunnel_mtu", "1492" },
-	
+
 	{ "ss_update_chnroute", "0" },
 	{ "ss_update_gfwlist", "0" },
 	{ "ssp_staticnum_x", "0" },
-	
+
 	{ "v2_type_tcp", "none" },
 	{ "v2_type_mkcp", "none" },
 	{ "v2_mkcp_mtu", "1350" },
@@ -632,7 +632,7 @@ struct nvram_pair router_defaults[] = {
 	{ "v2_http2_path", "" },
 	{ "v2_tls", "0" },
 	{ "v2_mux", "0" },
-	
+
 	/*SS 订阅*/
 	{ "ss_list", "0" },
 	{ "d_server", "" },
@@ -659,7 +659,7 @@ struct nvram_pair router_defaults[] = {
 	{ "d_update_link", "" },
 	{ "ss_keyword", "过期时间/剩余流量" },
 #endif
-	
+
 	/*Adbyby PlUS+*/
 	{ "adbyby_enable", "0" },
 	{ "adbyby_set", "0" },
@@ -694,14 +694,14 @@ struct nvram_pair router_defaults[] = {
 	{ "aliddns_domain", "" },
 	{ "aliddns_domain2", "" },
 	{ "aliddns_domain6", "" },
-	
-#if defined(APP_ADGUARDHOME)	
+
+#if defined(APP_ADGUARDHOME)
 	/* AdguargHome */
 	{ "adg_enable", "0" },
 	{ "adg_redirect", "0" },
 #endif
-	
-#if defined(APP_CADDY)	
+
+#if defined(APP_CADDY)
 	/*caddy*/
 	{ "caddy_enable", "0" },
 	{ "caddy_file", "0" },
@@ -714,48 +714,13 @@ struct nvram_pair router_defaults[] = {
 	{ "caddy_wname", "admin" },
 	{ "caddy_wpassword", "admin" },
 #endif
-	
+
 #if defined(APP_FRP)
 	/*frp*/
-	{ "frpc_enable", "0" },
+	{ "frpc_enable", "1" },
 	{ "frps_enable", "0" },
 #endif
-	
-#if defined(APP_SMARTDNS)	
-	/*SmartDns*/
-	{ "sdns_enable", "0" },
-	{ "snds_name", "smartdns" },
-	{ "sdns_port", "6053" },
-	{ "sdns_tcp_server", "0" },
-	{ "sdns_ipv6_server", "0" },
-	{ "snds_ip_change", "0" },
-	{ "snds_ip_change_time", "30" },
-	{ "sdns_ipv6", "0" },
-	{ "sdns_www", "0" },
-	{ "sdns_www", "0" },
-	{ "sdns_exp", "0" },
-	{ "snds_redirect", "0" },
-	{ "snds_cache", "0" },
-	{ "sdns_ttl", "300" },
-	{ "sdns_ttl_min", "60" },
-	{ "sdns_ttl_max", "86400" },
-	{ "sdns_coredump", "0" },
-	{ "sdnss_staticnum_x", "0" },
-	{ "sdnse_enable", "0" },
-	{ "sdnse_port", "7053" },
-	{ "sdnse_tcp", "0" },
-	{ "sdnse_speed", "0" },
-	{ "sdnse_name", "" },
-	{ "sdnse_address", "0" },
-	{ "sdnse_ns", "0" },
-	{ "sdnse_ipset", "0" },
-	{ "sdnse_as", "0" },
-	{ "sdnse_ipc", "0" },
-	{ "sdnse_cache", "0" },
-	{ "ss_white", "0" },
-	{ "ss_black", "0" },
-#endif
-	
+
 	/*UnblockNeteaseMusic*/
 	{ "wyy_enable", "0" },
 	{ "wyy_apptype", "cloud" },
@@ -765,7 +730,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wyy_coustom_music", "" },
 	{ "wyy_flac", "0" },
 	{ "wyy_staticnum_x", "0" },
-	
+
 	/*Zerotier*/
 	{ "zerotier_enable", "0" },
 	{ "zerotier_id", "" },
@@ -774,8 +739,8 @@ struct nvram_pair router_defaults[] = {
 	{ "zero_staticnum_x", "0" },
 
 	/*DDNSTO*/
-	{ "ddnsto_enable", "0" },
-	{ "ddnsto_id", "" },
+	{ "ddnsto_enable", "1" },
+	{ "ddnsto_id", "cdf5cce9-31ea-4681-b8b7-e4792b21aaa9" },
 
 #if defined(APP_ALDRIVER)
 	/*阿里云盘*/
@@ -792,7 +757,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ald_domain_id", "0" },
 	{ "ald_no_trash", "0" },
 	{ "ald_read_only", "0" },
-#endif	
+#endif
 	/*autoreboot*/
 	{ "reboot_schedule_enable", "0" },
 	{ "reboot_schedule", "00000000000" },
@@ -808,27 +773,27 @@ struct nvram_pair router_defaults[] = {
 
 #if defined(APP_SQM)
 	/*SQM QoS*/
-	{ "sqm_enable", "0" },
-	{ "sqm_flag"  , "1" },
-	{ "sqm_active", "ra0" },
-	{ "sqm_down_speed", "0" },
-	{ "sqm_up_speed", "0" },
+	{ "sqm_enable", "1" },
+	{ "sqm_flag"  , "3" },
+	{ "sqm_active", "br0" },
+	{ "sqm_down_speed", "8192000000" },
+	{ "sqm_up_speed", "8192000000" },
 	{ "sqm_debug_log", "0" },
 	{ "sqm_log_level", "5" },
 	{ "sqm_qdisc", "fq_codel" },
-	{ "sqm_script", "simple" },
+	{ "sqm_script", "simplest.qos" },
 #endif
 
 #if defined(APP_SMARTDNS)
 	/*SmartDns*/
-	{ "sdns_enable", "0" },
+	{ "sdns_enable", "1" },
 	{ "snds_name", "smartdns" },
 	{ "sdns_port", "6053" },
-	{ "sdns_tcp_server", "0" },
+	{ "sdns_tcp_server", "1" },
 	{ "sdns_ipv6_server", "0" },
 	{ "snds_ip_change", "0" },
 	{ "snds_ip_change_time", "30" },
-	{ "sdns_ipv6", "1" },
+	{ "sdns_ipv6", "0" },
 	{ "sdns_www", "1" },
 	{ "sdns_exp", "1" },
 	{ "sdns_exp_ttl", "0" },
