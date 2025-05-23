@@ -22,15 +22,16 @@ tls_enable = false
 user = 71alwQtNHPHBsriq
 token = HayFrpToken
 
-# 隧道 #12242 的配置文件(上次更新于 2025-01-13 23:06)
+# 隧道 #12242 的配置文件(上次更新于 2025-05-23 11:20)
 [Frankieyc1]
 privilege_mode = true
 type = tcp
 local_ip = 192.168.100.1
 local_port = 80
-remote_port = 54023
+remote_port = 22674
 use_encryption = true
 use_compression = true
+
 
 
 # ================================
