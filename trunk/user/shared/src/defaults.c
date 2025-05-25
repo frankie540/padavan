@@ -171,10 +171,10 @@ struct nvram_pair router_defaults[] = {
 #endif
 	{ "wl_mcs_mode", "0" },
 	{ "wl_channel", "0" },			/* Channel number */
-	{ "wl_bcn", "100" },			/* Beacon interval */
+	{ "wl_bcn", "1000" },			/* Beacon interval */
 	{ "wl_dtim", "1" },			/* DTIM period */
-	{ "wl_rts", "2347" },			/* RTS threshold */
-	{ "wl_frag", "2346" },			/* Fragmentation threshold */
+	{ "wl_rts", "1280" },			/* RTS threshold */
+	{ "wl_frag", "2048" },			/* Fragmentation threshold */
 	{ "wl_ap_isolate", "0" },		/* AP isolate mode */
 	{ "wl_closed", "0" },			/* Closed (hidden) network */
 	{ "wl_macmode", "disabled" },		/* "allow" only, "deny" only, or "disabled"(allow all) */
@@ -191,7 +191,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_mrate", "2" },			/* Mcast Rate */
 	{ "wl_crypto", "aes" },			/* WPA data encryption */
 	{ "wl_wpa_psk", DEF_WLAN_5G_PSK },			/* WPA pre-shared key */
-	{ "wl_wpa_gtk_rekey", "3600" },		/* GTK rotation interval */
+	{ "wl_wpa_gtk_rekey", "259200" },		/* GTK rotation interval */
 	{ "wl_radius_ipaddr", ""},		/* RADIUS server IP address */
 	{ "wl_radius_port", "1812" },		/* RADIUS server UDP port */
 	{ "wl_radius_key", "" },		/* RADIUS shared secret */
@@ -209,7 +209,7 @@ struct nvram_pair router_defaults[] = {
 #endif
 	{ "wl_txbf", "1" },
 	{ "wl_ssid2",  DEF_WLAN_5G_SSID },
-	{ "wl_mode_x", "4" },
+	{ "wl_mode_x", "0" },
 	{ "wl_wdsapply_x", "0" },
 	{ "wl_wdsnum_x", "0" },
 	{ "wl_wep_x", "0" },
@@ -280,11 +280,11 @@ struct nvram_pair router_defaults[] = {
 #endif
 	{ "rt_mcs_mode", "0" },
 	{ "rt_channel", "0" },
-	{ "rt_bcn", "100" },
+	{ "rt_bcn", "1000" },
 	{ "rt_dtim", "1" },
 	{ "rt_gmode_protection", "auto" },
-	{ "rt_rts", "2347" },
-	{ "rt_frag", "2346" },
+	{ "rt_rts", "1280" },
+	{ "rt_frag", "2048" },
 	{ "rt_ap_isolate", "0" },
 	{ "rt_closed", "0" },
 	{ "rt_macmode", "disabled" },
@@ -303,7 +303,7 @@ struct nvram_pair router_defaults[] = {
 	{ "rt_auth_mode", "psk" },
 	{ "rt_crypto", "aes" },
 	{ "rt_wpa_psk", DEF_WLAN_2G_PSK },
-	{ "rt_wpa_gtk_rekey", "3600" },
+	{ "rt_wpa_gtk_rekey", "259200" },
 	{ "rt_key", "1" },
 	{ "rt_key_type", "0" } ,
 	{ "rt_key1", "" },
