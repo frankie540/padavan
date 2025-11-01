@@ -30,9 +30,9 @@
 #define SYS_USER_NOBODY		"nobody"
 #define SYS_GROUP_NOGROUP	"nogroup"
 
-#define DEF_LAN_ADDR		"192.168.50.1"
-#define DEF_LAN_DHCP_BEG	"192.168.50.20"
-#define DEF_LAN_DHCP_END	"192.168.50.200"
+#define DEF_LAN_ADDR		"192.168.11.1"
+#define DEF_LAN_DHCP_BEG	"192.168.11.20"
+#define DEF_LAN_DHCP_END	"192.168.11.200"
 #define DEF_LAN_MASK		"255.255.255.0"
 
 #define DEF_WLAN_2G_CC		"AU"
