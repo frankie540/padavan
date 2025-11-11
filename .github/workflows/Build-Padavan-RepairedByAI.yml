@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-24.04  # 升级到 ubuntu-24.04 以支持 GLIBC_2.36 和 GLIBC_2.38
     strategy:
       matrix:
-        target: [K2P]
+        target: [WR1200JS]
         toolchain: [mipsel-linux-musl]
     steps:
       - uses: actions/checkout@v3
