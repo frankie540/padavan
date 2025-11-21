@@ -228,7 +228,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_ldpc", "2" },
 	{ "wl_HT_RDG", "0" },
 #if defined (USE_WID_5G) && (USE_WID_5G==7615 || USE_WID_5G==7915)
-	{ "wl_HT_AMSDU", "1" },
+	{ "wl_HT_AMSDU", "0" },
 	{ "wl_HT_BAWinSize", "256" },
 	{ "wl_mumimo", "0" },
 #else
