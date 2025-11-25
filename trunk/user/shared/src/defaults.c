@@ -1,3 +1,14 @@
+#if defined(USE_WID_5G)
+#define STRINGIZE(x) #x
+#define VALUE_STRING(x) STRINGIZE(x)
+
+#if VALUE_STRING(USE_WID_5G)[0] != '\0'
+#define WID_5G_VALUE USE_WID_5G
+#else
+#define WID_5G_VALUE 0
+#endif
+#endif
+
 /*
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -228,7 +239,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_ldpc", "2" },
 	{ "wl_HT_RDG", "0" },
 
- #if (defined(USE_WID_5G) && USE_WID_5G == 7615) || (defined(USE_WID_5G) && USE_WID_5G == 7915)
+#if defined(USE_WID_5G) && (WID_5G_VALUE == 7615 || WID_5G_VALUE == 7915)
     { "wl_HT_AMSDU", "0" },
     { "wl_HT_BAWinSize", "256" },
     { "wl_mumimo", "0" },
