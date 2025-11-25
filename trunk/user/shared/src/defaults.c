@@ -227,22 +227,14 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_greenap", "0" },
 	{ "wl_ldpc", "2" },
 	{ "wl_HT_RDG", "0" },
-
-#if defined(USE_WID_5G)
-// 检查 USE_WID_5G 是否被定义为特定值
-#if (USE_WID_5G == 7615) || (USE_WID_5G == 7915)
-    { "wl_HT_AMSDU", "0" },
-    { "wl_HT_BAWinSize", "256" },
-    { "wl_mumimo", "0" },
+#if defined (USE_WID_5G) && (USE_WID_5G==7615 || USE_WID_5G==7915)
+	{ "wl_HT_AMSDU", "1" },
+	{ "wl_HT_BAWinSize", "256" },
+	{ "wl_mumimo", "0" },
 #else
-    { "wl_HT_AMSDU", "0" },
-    { "wl_HT_BAWinSize", "64" },
+	{ "wl_HT_AMSDU", "0" },
+	{ "wl_HT_BAWinSize", "64" },
 #endif
-#else
-    { "wl_HT_AMSDU", "0" },
-    { "wl_HT_BAWinSize", "64" },
-#endif
-
 	{ "wl_HT_80211KV", "1" },
 	{ "wl_HT_80211R", "0" },
 	{ "wl_HT_MpduDensity", "5" },
