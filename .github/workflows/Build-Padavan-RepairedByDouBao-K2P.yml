@@ -1,4 +1,4 @@
-name: Build-Padavan-K2P
+name: Build-K2P
 
 on:
   #push:
