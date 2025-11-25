@@ -273,6 +273,8 @@ struct nvram_pair router_defaults[] = {
  * #endif
  */
 
+#endif
+
 #if BOARD_HAS_2G_RADIO
 	/* 2G Wireless parameters */
 	{ "rt_country_code", DEF_WLAN_2G_CC },
