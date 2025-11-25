@@ -228,52 +228,48 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_ldpc", "2" },
 	{ "wl_HT_RDG", "0" },
 
-/*
- * #if defined (USE_WID_5G) && (USE_WID_5G==7615 || USE_WID_5G==7915)
- *	{ "wl_HT_AMSDU", "0" },
- *	{ "wl_HT_BAWinSize", "256" },
- *	{ "wl_mumimo", "0" },
- * #else
- * 
- * 	{ "wl_HT_AMSDU", "0" },
- * 	{ "wl_HT_BAWinSize", "64" },
- * #endif
- * 	{ "wl_HT_80211KV", "1" },
- * 	{ "wl_HT_80211R", "0" },
- * 	{ "wl_HT_MpduDensity", "5" },
- * 	{ "wl_HT_AutoBA", "1" },
- * 	{ "wl_VgaClamp", "0" },
- * 	{ "wl_KickStaRssiLow", "0" },
- * 	{ "wl_AssocReqRssiThres", "0" },
- * 
- * 	// guest AP 5Ghz
- * 	{ "wl_guest_enable", "0" },
- * 	{ "wl_guest_date_x", "1111111" },
- * 	{ "wl_guest_time_x", "00002359" },
- * 	{ "wl_guest_time2_x", "00002359" },
- * 	{ "wl_guest_ssid", DEF_WLAN_5G_GSSID },
- * 	{ "wl_guest_closed", "0" },
- * 	{ "wl_guest_ap_isolate", "1" },
- * 	{ "wl_guest_lan_isolate", "1" },
- * 	{ "wl_guest_auth_mode", "open" },
- * 	{ "wl_guest_wpa_mode", "2" },
- * 	{ "wl_guest_crypto", "aes" },
- * 	{ "wl_guest_wpa_psk", "" },
- * 	{ "wl_guest_macrule", "0" },
- * 	{ "wl_guest_mcs_mode", "0" },
- * 
- * 	// ApCli 5Ghz
- * 	{ "wl_sta_ssid", "W_5G" },
- * 	{ "wl_sta_auth_mode", "psk" },
- * 	{ "wl_sta_wpa_mode", "2" },
- * 	{ "wl_sta_crypto", "aes" },
- * 	{ "wl_sta_wpa_psk", "22674499" },
- * 	{ "wl_sta_wisp", "1" },
- * 	{ "wl_sta_auto", "1" },
- * #endif
- */
-
-#endif
+ #if defined (USE_WID_5G) && (USE_WID_5G==7615 || USE_WID_5G==7915)
+	{ "wl_HT_AMSDU", "0" },
+	{ "wl_HT_BAWinSize", "256" },
+	{ "wl_mumimo", "0" },
+ #else
+ 
+	{ "wl_HT_AMSDU", "0" },
+	{ "wl_HT_BAWinSize", "64" },
+ #endif
+	{ "wl_HT_80211KV", "1" },
+	{ "wl_HT_80211R", "0" },
+	{ "wl_HT_MpduDensity", "5" },
+	{ "wl_HT_AutoBA", "1" },
+	{ "wl_VgaClamp", "0" },
+	{ "wl_KickStaRssiLow", "0" },
+	{ "wl_AssocReqRssiThres", "0" },
+ 
+	// guest AP 5Ghz
+	{ "wl_guest_enable", "0" },
+	{ "wl_guest_date_x", "1111111" },
+	{ "wl_guest_time_x", "00002359" },
+	{ "wl_guest_time2_x", "00002359" },
+	{ "wl_guest_ssid", DEF_WLAN_5G_GSSID },
+	{ "wl_guest_closed", "0" },
+	{ "wl_guest_ap_isolate", "1" },
+	{ "wl_guest_lan_isolate", "1" },
+	{ "wl_guest_auth_mode", "open" },
+	{ "wl_guest_wpa_mode", "2" },
+	{ "wl_guest_crypto", "aes" },
+	{ "wl_guest_wpa_psk", "" },
+	{ "wl_guest_macrule", "0" },
+	{ "wl_guest_mcs_mode", "0" },
+ 
+	// ApCli 5Ghz
+	{ "wl_sta_ssid", "W_5G" },
+	{ "wl_sta_auth_mode", "psk" },
+	{ "wl_sta_wpa_mode", "2" },
+	{ "wl_sta_crypto", "aes" },
+	{ "wl_sta_wpa_psk", "22674499" },
+	{ "wl_sta_wisp", "1" },
+	{ "wl_sta_auto", "1" },
+ #endif
 
 #if BOARD_HAS_2G_RADIO
 	/* 2G Wireless parameters */
