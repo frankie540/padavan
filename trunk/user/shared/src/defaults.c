@@ -1,14 +1,3 @@
-#if defined(USE_WID_5G)
-#define STRINGIZE(x) #x
-#define VALUE_STRING(x) STRINGIZE(x)
-
-#if VALUE_STRING(USE_WID_5G)[0] != '\0'
-#define WID_5G_VALUE USE_WID_5G
-#else
-#define WID_5G_VALUE 0
-#endif
-#endif
-
 /*
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
