@@ -1,38 +1,56 @@
 
 2025/05
 
-使用豆包AI进行GitHub action编译脚本的修复Build-Padavan-RepairedByAI.yml
-
-https://github.com/frankie540/padavan/tree/dev/.github/workflows
+使用豆包AI进行GitHub action编译脚本的修复Build-Padavan-RepairedByDouBao-K2P.yml
 
 修改机型的插件模板
 
 https://github.com/frankie540/padavan/tree/dev/trunk/configs/templates
 
-k2p:
+K2P:
+
 CONFIG_FIRMWARE_INCLUDE_SFE=y
+
 CONFIG_FIRMWARE_ENABLE_FUSE=y
+
 CONFIG_FIRMWARE_INCLUDE_XFRM=y
+
 CONFIG_FIRMWARE_INCLUDE_QOS=y
+
 CONFIG_FIRMWARE_INCLUDE_IMQ=y
+
 CONFIG_FIRMWARE_INCLUDE_IFB=y
+
 CONFIG_FIRMWARE_INCLUDE_IPSET=y
+
 CONFIG_FIRMWARE_INCLUDE_LANG_CN=y
+
 CONFIG_FIRMWARE_INCLUDE_PARTED=y
+
 CONFIG_FIRMWARE_INCLUDE_XUPNPD=y
+
 CONFIG_FIRMWARE_INCLUDE_CURL=y
+
 CONFIG_FIRMWARE_INCLUDE_MSD_LITE=y
+
 CONFIG_FIRMWARE_INCLUDE_HTOP=y
+
 CONFIG_FIRMWARE_INCLUDE_NANO=y
+
 CONFIG_FIRMWARE_INCLUDE_MTR=y
+
 CONFIG_FIRMWARE_INCLUDE_SOCAT=y
+
 CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y
+
 CONFIG_FIRMWARE_INCLUDE_DDNSTO=y
+
 CONFIG_FIRMWARE_INCLUDE_SQM=y
 
 
 defaults.c 默认启动smartdns，ddnsto，sqm，关闭ipv6
-defaults.h 修改LAN口IP，WiFi名字密码，
+
+defaults.h 修改LAN口IP，WiFi名字密码
 
 https://github.com/frankie540/padavan/tree/dev/trunk/user/shared/src
 
