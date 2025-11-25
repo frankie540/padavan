@@ -233,7 +233,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_HT_BAWinSize", "256" },
 	{ "wl_mumimo", "0" },
  #else
- 
+
 	{ "wl_HT_AMSDU", "0" },
 	{ "wl_HT_BAWinSize", "64" },
  #endif
@@ -244,7 +244,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_VgaClamp", "0" },
 	{ "wl_KickStaRssiLow", "0" },
 	{ "wl_AssocReqRssiThres", "0" },
- 
+
 	// guest AP 5Ghz
 	{ "wl_guest_enable", "0" },
 	{ "wl_guest_date_x", "1111111" },
@@ -260,7 +260,7 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_guest_wpa_psk", "" },
 	{ "wl_guest_macrule", "0" },
 	{ "wl_guest_mcs_mode", "0" },
- 
+
 	// ApCli 5Ghz
 	{ "wl_sta_ssid", "W_5G" },
 	{ "wl_sta_auth_mode", "psk" },
@@ -580,7 +580,7 @@ struct nvram_pair router_defaults[] = {
 	{ "socks5_port", "1088" },
 	{ "socks5_aenable", "0" },
 	{ "socks5_s_username", "" },
-	{ "socks5_s_pasord", "" },
+	{ "socks5_s_password", "" },
 	{ "ss_cgroups", "0" },
 	{ "ss_cgoups_cpu_s", "512" },
 	{ "ss_cgoups_mem_s", "20M" },
@@ -650,7 +650,7 @@ struct nvram_pair router_defaults[] = {
 	{ "d_v2_host", "" },
 	{ "d_v2_path", "" },
 	{ "d_v2_tls", "" },
-	{ "d_ss_pasord", "" },
+	{ "d_ss_password", "" },
 	{ "d_ss_method", "" },
 	{ "d_ss_protocol", "" },
 	{ "d_ss_protoparam", "" },
@@ -714,7 +714,7 @@ struct nvram_pair router_defaults[] = {
 	{ "caddyw_wan_port", "19999" },
 	{ "caddy_wip6", "0" },
 	{ "caddy_wname", "admin" },
-	{ "caddy_wpasord", "admin" },
+	{ "caddy_wpassword", "admin" },
 #endif
 
 #if defined(APP_FRP)
@@ -749,7 +749,7 @@ struct nvram_pair router_defaults[] = {
 	{ "aliyundrive_enable", "0" },
 	{ "ald_refresh_token", "" },
 	{ "ald_auth_user", "" },
-	{ "ald_auth_pasord", "" },
+	{ "ald_auth_password", "" },
 	{ "ald_read_buffer_size", "10485760" },
 	{ "ald_cache_size", "1000" },
 	{ "ald_cache_ttl", "600" },
@@ -857,7 +857,7 @@ struct nvram_pair router_defaults[] = {
 	{ "ddns_enable_x", "0" },
 	{ "ddns_server_x", "" },
 	{ "ddns_username_x", "" },
-	{ "ddns_pasd_x", "" },
+	{ "ddns_passwd_x", "" },
 	{ "ddns_hostname_x", "" },
 	{ "ddns_hostname2_x", "" },
 	{ "ddns_hostname3_x", "" },
