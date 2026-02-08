@@ -260,11 +260,11 @@ struct nvram_pair router_defaults[] = {
 	{ "wl_guest_mcs_mode", "0" },
 
 	// ApCli 5Ghz
-	{ "wl_sta_ssid", "W_5G" },
+	{ "wl_sta_ssid", "" },
 	{ "wl_sta_auth_mode", "psk" },
 	{ "wl_sta_wpa_mode", "2" },
 	{ "wl_sta_crypto", "aes" },
-	{ "wl_sta_wpa_psk", "22674499" },
+	{ "wl_sta_wpa_psk", "" },
 	{ "wl_sta_wisp", "1" },
 	{ "wl_sta_auto", "1" },
  #endif
@@ -939,9 +939,9 @@ struct nvram_pair router_defaults[] = {
 	{ "fw_pt_pppoe", "0" },
 
 #if defined(BOARD_ROLE_REPEATER)
-	{ "sw_mode", "3" },
-#else
 	{ "sw_mode", "1" },
+#else
+	{ "sw_mode", "3" },
 #endif
 
 	{ "telnetd", "0" },
